@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden ;
+    overflow-y: auto ;
+}
+header{
+    position: fixed ;
+    width: 100% ;
+}
+nav {
+    position: relative ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px 12px 18px;
+    background-color: #000;
+    color: white;
+    box-shadow: 1px 1px 9px 0px rgb(6 6 6);
+}
+
+.flx {
+    display: flex;
+}
+
+.dropMenu {
+    gap: 10px;
+}
+
+.logo {
+    align-items: center;
+}
+
+.logoImg {
+    width: 140px;
+}
+
+.f1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.f2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.f3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.txtClr {
+    color: #333333;
+}
+
+.logo-letter {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #f44336;
+    display: flex;
+}
+
+.logo-text {
+    font-size: 18px;
+    color: #f44336;
+}
+.resp-menu-cont{
+    display: none ;
+    flex-direction: column ;
+    z-index: 3 ; 
+}
+.resp-menu-cont.show{
+    display: block ;
+}
+.overlay{
+    position: fixed ;
+    left : 0px ;
+    top : 0px ;
+    height : 100vh ;
+    width : 100vw ;
+    z-index: 2 ;
+    background-color: rgba(0,0,0,0.6) ;
+}
+.nav-links , .res-nav-links{   
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links .dropdown{
+    position: relative ;
+}
+.nav-links .dropdown:hover .sub-menu{
+    display: block ;
+}
+.nav-links .sub-menu{
+    position: absolute ;
+    left : calc(0px - 83px/2) ;
+    top : 20px ;
+    list-style-type: none ;     
+    width : 200px ;
+    transition: .2s all ease;
+    display: none ;    
+}
+.sub-menu li{
+    padding : 16px 20px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    color : #fff ;
+    background-color: #373737 ;
+    margin : 0px ;
+    cursor: pointer;
+    transition: .2s all ease ;
+}
+.sub-menu li:hover{
+    background-color: #222 ;
+}
+.res-nav-links{
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    z-index: 3 ;
+    position: relative ;
+}
+.res-nav-links li , .res-sub-menu li{
+    padding : 18px ;
+    text-align: left ;
+    width: 100% ;
+    padding-left : 43% ;
+}
+.nav-links .dropdown {
+    margin-right: 28px;
+}
+.res-nav-links .dropdown .right-arrow{
+    transform: rotate(269deg);
+}
+.res-nav-links .dropdown .down-arrow{
+    display: none ;
+}
+.res-nav-links .dropdown.opened .down-arrow{
+    display: block ;
+}
+.res-nav-links .dropdown.opened .right-arrow{
+    display: none ;
+}
+.res-sub-menu{
+    display: none ;
+    width: 100% ;
+    list-style-type: none ;
+}
+.res-sub-menu li{
+    padding : 16px 0px ;
+    background-color: #373737 ;
+    transition: .2s all ease ;
+}
+.res-sub-menu li:hover{
+    background-color: #222 ;
+}
+.res-nav-links .res-sub-menu.show{
+    display: block;
+}
+.nav-links li {
+    margin-right: 35px;
+}
+
+.nav-links a , .res-nav-links a{
+    text-decoration: none;
+}
+.ham-menu{
+    display: none ;
+    position: absolute ;
+    right : 10px ;
+}
+.ham-menu.hide{
+    display: none ;
+}
+.close-ham-icon{  
+    position: absolute ;
+    right : 10px ;
+    top : -40px ;
+    z-index: 3 ;
+}
+.bannerImageContainer .bannerImg {
+    object-fit: contain;
+    width: 100%;
+}
+.contentContainer {
+    text-align: center;
+    padding: 20px;
+}
+.header {
+    margin: 20px 0;
+}
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+    flex-wrap: wrap ;
+}
+.icon-img {
+    height: 65px;
+    width: 65px;
+}
+
+.child-center {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-title {
+    margin-top: 38px;
+}
+.content , .content-reverse {
+    margin: 1px 0;
+}
+.content img , .content-reverse img {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 10px;
+}
+.content .text , .content-reverse .text {
+    max-width: 300px;
+    text-align: left;
+    margin: 10px;
+}
+.content .text p , .content-reverse .text p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+.content .mr-60,
+.content-reverse .mr-60 {
+    margin-right: 60px;
+}
+.common-content-class .text p {
+    line-height: 28px;
+}
+.tab-parent{
+    margin-bottom: 20px ;
+}
+.tab-cont {
+    height: 220px;
+    width: 590px;
+    margin-right: 67px;
+}
+.tab-header {
+    height: 36px;
+    width: 115px;
+    background-color: #dddddd;
+    margin-right: 2px;
+    cursor: pointer;
+    transition: .2s all ease;
+}
+.tab-header.active {
+    background-color: #e22323;
+    color: #fff;
+}
+.tab-content {
+    height: calc(100% - 36px);
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 6px 0px #c1bebe;
+    margin-top: 2px;
+    padding: 10px;
+    line-height: 28px ;
+}
+.white-text{
+    color: #fff ;
+}
+.scrollVertical {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.scrollVertical::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollVertical::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollVertical::-webkit-scrollbar-thumb {
+    background: #888;
+}
+.footerContent{
+    margin-top : 41px ;
+    padding : 20px ;
+    background-color: #000 ;
+}
+.cp{
+    cursor: pointer ;
+}
+.mb-20{
+    margin-bottom: 20px ;
+}
+.subscribe{
+    background-color: #ee3256;
+    padding: 7px 55px 7px 55px;
+    border-radius: 20px;
+}
+.policy-cont span{
+    margin : 0 23px ;   
+}
+.logo-cont img{
+    width : 150px ;
+    object-fit: contain ;
+}
+@media (max-width: 768px) {
+    .content, .content-reverse {
+        flex-direction: column;
+    }
+    .content .text , .content-reverse .text {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .content .mr-60, .content-reverse .mr-60{
+        margin-right : 0px ;
+    }
+}
+@media (max-width : 595px){
+    .ham-menu{
+         display: block ;
+    }
+    .nav-links{
+        display: none ;
+    }
+}
+@media (max-width : 775px){
+    .tab-cont{
+        margin-right : 0px ;
+    }
+}
+@media (max-width : 420px){
+    .content img, .content-reverse img{
+        margin : 0px ;
+    }
+}

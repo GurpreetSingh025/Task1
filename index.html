@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flx">
+            <div class="logo">
+                <span class="logo-letter f2 flx">
+                    <img src="./images/dummy-logo-5b.png" alt="logo" class="logoImg">
+                </span>
+            </div>
+            <ul class="nav-links flx">
+                <li class="dropdown">
+                    <a href="#" class="f2 white-text flx dropMenu">
+                        <span>Menu 1</span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="20" height="15" viewBox="4 -1 18 14">
+                                <image id="down_arrow_icon" width="18" height="18"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuZWRhMmIzZiwgMjAyMS8xMS8xNC0xMjozMDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0wNC0yOFQwMDoxMzo1MCswNTozMCIgeG1wOk1vZGlmeURhdGU9IjIwMjItMDQtMjhUMDA6MTU6NDErMDU6MzAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDQtMjhUMDA6MTU6NDErMDU6MzAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIxIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0iRG90IEdhaW4gMjAlIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmY0MjJiY2M2LWQ0YzktMDY0NS05ZjU0LTdmMDQ0M2FhMmYyMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpmNDIyYmNjNi1kNGM5LTA2NDUtOWY1NC03ZjA0NDNhYTJmMjAiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmNDIyYmNjNi1kNGM5LTA2NDUtOWY1NC03ZjA0NDNhYTJmMjAiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmY0MjJiY2M2LWQ0YzktMDY0NS05ZjU0LTdmMDQ0M2FhMmYyMCIgc3RFdnQ6d2hlbj0iMjAyMi0wNC0yOFQwMDoxMzo1MCswNTozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgBIpiMAAAEWSURBVFiF7ZU9akJBFEavPylCEFGEQMDeIpAdWFiIS0hjpYVbSJHK7CGNa0hjIVlBijQBS0FQsIwJVi8RPHaCvPm570Ut4typv3Pmzly4GeS4lT0yPwiCIAiC4HwFTxIJKU4k/TgsY9gHSymlvO6XlDUdDFLizUlDr1leSFNDcnGa+TkveUuMf+fKxLL9WIVJIvyUazPJPhQ1lmr8JzUbxzV3dSIV/oeGneIe7Xs2XvyGtovhFgiPXsGDm+ATCM9O/MCX9wsueLXiR+T/LhAKfBjxY4r+tEYg3DCP4RdUNVmdQLjlew+/4k6X1AqEFusd/pemNqcXCN2doKdPJREIPebM6CTJmBbOQet/Lv0gCIIgCIJTC7aG19Od3fL0PgAAAABJRU5ErkJggg==" />
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item f1">Sub Menu Item 1</li>
+                        <li class="sub-menu-item f1">Sub Menu Item 2</li>
+                        <li class="sub-menu-item f1">Sub Menu Item 3</li>
+                        <li class="sub-menu-item f1">Sub Menu Item 4</li>
+                    </ul>
+                </li>
+                <li><a href="#" class="f2 white-text">Menu 2</a></li>
+                <li><a href="#" class="f2 white-text">Menu 3</a></li>
+                <li><a href="#" class="f2 white-text">Menu 4</a></li>
+            </ul>
+            <div class="ham-menu cp">
+                 <span>
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" x="0px" y="0px" width="25" height="25" viewBox="0 0 24 24"> <path d="M 4.25 3 A 1.250125 1.250125 0 1 0 4.25 5.5 L 19.75 5.5 A 1.250125 1.250125 0 1 0 19.75 3 L 4.25 3 z M 4.25 11 A 1.250125 1.250125 0 1 0 4.25 13.5 L 19.75 13.5 A 1.250125 1.250125 0 1 0 19.75 11 L 4.25 11 z M 4.25 18.5 A 1.250125 1.250125 0 1 0 4.25 21 L 19.75 21 A 1.250125 1.250125 0 1 0 19.75 18.5 L 4.25 18.5 z"></path></svg>
+                 </span>
+            </div>
+        </nav>
+        <nav class="resp-menu-cont flx child-center">
+             <div class="overlay"></div>
+             <div class="menu-cont">
+                 <ul class="res-nav-links flx">
+                    <li class="dropdown cp">
+                        <a href="#" class="f2 flx dropMenu white-text">
+                            <span>Menu 1</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="down-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="20" height="15" viewBox="4 -1 18 14">
+                                    <image id="down_arrow_icon" width="18" height="18"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuZWRhMmIzZiwgMjAyMS8xMS8xNC0xMjozMDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0wNC0yOFQwMDoxMzo1MCswNTozMCIgeG1wOk1vZGlmeURhdGU9IjIwMjItMDQtMjhUMDA6MTU6NDErMDU6MzAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDQtMjhUMDA6MTU6NDErMDU6MzAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIxIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0iRG90IEdhaW4gMjAlIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmY0MjJiY2M2LWQ0YzktMDY0NS05ZjU0LTdmMDQ0M2FhMmYyMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpmNDIyYmNjNi1kNGM5LTA2NDUtOWY1NC03ZjA0NDNhYTJmMjAiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmNDIyYmNjNi1kNGM5LTA2NDUtOWY1NC03ZjA0NDNhYTJmMjAiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmY0MjJiY2M2LWQ0YzktMDY0NS05ZjU0LTdmMDQ0M2FhMmYyMCIgc3RFdnQ6d2hlbj0iMjAyMi0wNC0yOFQwMDoxMzo1MCswNTozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgBIpiMAAAEWSURBVFiF7ZU9akJBFEavPylCEFGEQMDeIpAdWFiIS0hjpYVbSJHK7CGNa0hjIVlBijQBS0FQsIwJVi8RPHaCvPm570Ut4typv3Pmzly4GeS4lT0yPwiCIAiC4HwFTxIJKU4k/TgsY9gHSymlvO6XlDUdDFLizUlDr1leSFNDcnGa+TkveUuMf+fKxLL9WIVJIvyUazPJPhQ1lmr8JzUbxzV3dSIV/oeGneIe7Xs2XvyGtovhFgiPXsGDm+ATCM9O/MCX9wsueLXiR+T/LhAKfBjxY4r+tEYg3DCP4RdUNVmdQLjlew+/4k6X1AqEFusd/pemNqcXCN2doKdPJREIPebM6CTJmBbOQet/Lv0gCIIgCIJTC7aG19Od3fL0PgAAAABJRU5ErkJggg==" />
+                                </svg> 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="4 5 15 14">
+                                    <image id="down_arrow_icon" width="18" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuZWRhMmIzZiwgMjAyMS8xMS8xNC0xMjozMDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0wNC0yOFQwMDoxMzo1MCswNTozMCIgeG1wOk1vZGlmeURhdGU9IjIwMjItMDQtMjhUMDA6MTU6NDErMDU6MzAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDQtMjhUMDA6MTU6NDErMDU6MzAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIxIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0iRG90IEdhaW4gMjAlIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmY0MjJiY2M2LWQ0YzktMDY0NS05ZjU0LTdmMDQ0M2FhMmYyMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpmNDIyYmNjNi1kNGM5LTA2NDUtOWY1NC03ZjA0NDNhYTJmMjAiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmNDIyYmNjNi1kNGM5LTA2NDUtOWY1NC03ZjA0NDNhYTJmMjAiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmY0MjJiY2M2LWQ0YzktMDY0NS05ZjU0LTdmMDQ0M2FhMmYyMCIgc3RFdnQ6d2hlbj0iMjAyMi0wNC0yOFQwMDoxMzo1MCswNTozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjEgKFdpbmRvd3MpIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgBIpiMAAAEWSURBVFiF7ZU9akJBFEavPylCEFGEQMDeIpAdWFiIS0hjpYVbSJHK7CGNa0hjIVlBijQBS0FQsIwJVi8RPHaCvPm570Ut4typv3Pmzly4GeS4lT0yPwiCIAiC4HwFTxIJKU4k/TgsY9gHSymlvO6XlDUdDFLizUlDr1leSFNDcnGa+TkveUuMf+fKxLL9WIVJIvyUazPJPhQ1lmr8JzUbxzV3dSIV/oeGneIe7Xs2XvyGtovhFgiPXsGDm+ATCM9O/MCX9wsueLXiR+T/LhAKfBjxY4r+tEYg3DCP4RdUNVmdQLjlew+/4k6X1AqEFusd/pemNqcXCN2doKdPJREIPebM6CTJmBbOQet/Lv0gCIIgCIJTC7aG19Od3fL0PgAAAABJRU5ErkJggg=="></image>
+                                </svg>
+                            </span>
+                        </a>                      
+                    </li>
+                    <ul class="res-sub-menu">
+                        <li class="res-sub-menu-item res-menu-item flx cp f1 child-center">Sub Menu Item 1</li>
+                        <li class="res-sub-menu-item res-menu-item flx cp f1 child-center">Sub Menu Item 2</li>
+                        <li class="res-sub-menu-item res-menu-item flx cp f1 child-center">Sub Menu Item 3</li>
+                        <li class="res-sub-menu-item res-menu-item flx cp f1 child-center">Sub Menu Item 4</li>
+                    </ul> 
+                    <li class="cp"><a href="#" class="f2 white-text res-menu-item">Menu 2</a></li>
+                    <li class="cp"><a href="#" class="f2 white-text res-menu-item">Menu 3</a></li>
+                    <li class="cp"><a href="#" class="f2 white-text res-menu-item">Menu 4</a></li>
+                 </ul>
+             </div>
+             <span class="close-ham-icon cp">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                    <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+                </svg>
+             </span>
+        </nav>
+    </header>
+    <section class="bannerImageContainer">
+        <img class="bannerImg" src="./images/gladientImage.png" />
+    </section>
+    <main class="contentContainer">
+        <section class="mainContent">
+            <div class="header">
+                <p class="f3">
+                    Lorem Ipsum is simply dummy text of the printing
+                </p>
+            </div>
+            <div class="icons">
+                <img src="./images/icon1.png" alt="icon1" class="icon-img">
+                <img src="./images/icon2.png" alt="icon2" class="icon-img">
+                <img src="./images/icon3.png" alt="icon3" class="icon-img">
+                <img src="./images/icon4.png" alt="icon4" class="icon-img">
+                <img src="./images/icon5.png" alt="icon5" class="icon-img">
+            </div>
+            <div class="content-title">
+                <p class="f3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="content common-content-class flx child-center">
+                <img alt="Jar with coffee beans" class="mr-60" src="./images/img2.png" />
+                <div class="text">
+                    <p class="f3 txtClr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis.
+                    </p>
+                </div>
+            </div>
+            <div class="content-reverse common-content-class flx child-center">
+                <div class="text mr-60">
+                    <p class="f3 txtClr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis.
+                    </p>
+                </div>
+                <img alt="Bag with coffee beans" src="./images/img3.png" />
+            </div>
+            <div class="tab-parent flx child-center">
+                <div class="tab-cont">
+                    <div class="tab-header-cont flx">
+                        <div class="tab-header flx child-center f1 active" key="0">Tab 1</div>
+                        <div class="tab-header flx child-center f1" key="1">Tab 2</div>
+                    </div>
+                    <div class="tab-content flx f3 scrollVertical"></div>
+                </div>                
+            </div>
+        </section>
+    </main>
+    <footer class="footerContent flx child-center">
+        <div class="footer-cont">
+            <div class="sub-cont flx child-center mb-20">
+                <div class="subscribe white-text flx child-center f2 cp">Subscribe</div>
+            </div>
+            <div class="policy-cont flx child-center f2 white-text mb-20">
+                <span class="white-text cp">Privacy Policy</span> | <span class="white-text cp">Terms Of Use</span> | <span class="white-text">All Rights Reserved</span> 
+            </div>
+            <div class="logo-cont flx child-center">
+                  <img src="./images/dummy-logo-5b.png" alt="logo" class="logo" />
+            </div>
+        </div>
+   </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
